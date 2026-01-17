@@ -1,0 +1,4 @@
+# keyword
+import keyword
+print("the keywordss are:")
+print(keyword.kwlist)
