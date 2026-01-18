@@ -1,0 +1,20 @@
+a = 67
+print("the type of a is",type(a))
+b = 67.67
+print("the type of b is",type(b))
+c = "67"
+print("the type of c is",type(c))
+d = True
+print("the type of a is",type(d))
+a = float(67)
+print(a)
+print("the type of a is",type(a))
+b = int(67.7)
+print(b)
+print("the type of b is",type(b))
+c = bool("67")
+print(c)
+print("the type of c is",type(c))
+d = str(True)
+print(d)
+print("the type of d is",type(d))
