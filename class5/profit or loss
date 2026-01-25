@@ -1,0 +1,6 @@
+cp = float(input("enter cost price"))
+sp = float(input("enter sell price"))
+if cp < sp:
+    print(cp-sp,"is the profit")
+else:
+    print(cp-sp,"is the loss")
