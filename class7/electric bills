@@ -1,0 +1,13 @@
+mc = int(input("enter the watts"))
+if mc < 50:
+    amt = mc * 2.60 +25
+elif mc < 100:
+    amt = mc * 3.25 +35
+elif mc < 200:
+    amt = mc * 5.26 +45
+else:
+    amt = mc * 8.45+75
+
+print("your bill is",round(amt,2))
+    
+
