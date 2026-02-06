@@ -1,0 +1,7 @@
+b = int(input("enter basee"))
+p = int(input("enter power"))
+res = 1
+
+for i in range(p):
+    res*b
+print(f"the answer{b}"power is{p} is {res})
