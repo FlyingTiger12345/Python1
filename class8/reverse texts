@@ -1,0 +1,5 @@
+str1 = input("enter a phrase you want to reverse")
+rev = ''
+for i in str1:
+    rev = i + rev
+print(f"the reversed phrase is{rev}")
