@@ -1,0 +1,9 @@
+def cube(x):
+    return x * x * x
+def cube_calculator(x):
+    if x%3 == 0:
+        return cube(x)
+    else:
+        return False
+print("the cube of 9 is",cube_calculator(9))
+print(cube_calculator(67))
