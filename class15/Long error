@@ -1,0 +1,14 @@
+try:
+    a1,a2 = eval(input("enter a number"))
+    res = a1/a2
+    print("the answer is",res)
+except SyntaxError as ex:
+    print("the error is ",ex)
+except ZeroDivisionError as ex:
+    print("the error is ",ex)
+except:
+    print("numbers only with comma and 2 digits")
+else:
+    print("no errors")
+finally:
+    print("im always printed")
