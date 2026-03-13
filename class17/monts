@@ -1,0 +1,5 @@
+import calendar
+for i in range(1,13):
+    res = calendar.month_name[i]
+print("Month Name: " + str(res))
+print(calendar.month (2026,1))
