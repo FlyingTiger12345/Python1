@@ -1,0 +1,21 @@
+def night(nights):
+    return 140 * nights
+
+def ridepklacecost(city):
+    if city == "Charlotte":
+        return 667
+    elif city == "Los Angeles":
+        return 224
+    elif city == "Florid":
+        return 100
+def rentalcost(days):
+    if days <= 7:
+        return 40*days - 50
+    elif days >=3:
+        return 40*days - 20
+    else:
+        return 40*days
+def tripcost(city,days,spenddingmoney,nights):
+    return rentalcost(days) + ridepklacecost(city) + night(nights) +spenddingmoney
+
+print("the tripcost is",tripcost("Charlotte",7,6700,4))
