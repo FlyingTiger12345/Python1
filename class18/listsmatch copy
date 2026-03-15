@@ -1,0 +1,12 @@
+listnumbers = [67,677,67,67667,6767676,767667]
+sum = 0
+for ten in listnumbers:
+    sum += ten
+
+print("the sum is",sum)
+
+
+avg = sum / len(listnumbers)
+print(avg)
+print("the maximum element is ",max(listnumbers))
+print("the maximum element is ",min(listnumbers))
