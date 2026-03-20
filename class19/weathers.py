@@ -9,6 +9,6 @@ for i in weather:
 
 
 if s > r:
-    print("good weather")
+    print("sunny weather")
 else:
-    print("bad weather")
+    print("rainy day")
