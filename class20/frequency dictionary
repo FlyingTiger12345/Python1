@@ -1,0 +1,8 @@
+dict1 = {"man":2,"woman":2,"among":3,"us":2,"bus":2}
+c = 0
+
+for i in dict1:
+    if dict1[i] == 2:
+        c += 1
+print("the frequency is",c)
+
