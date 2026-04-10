@@ -5,7 +5,7 @@ class names:
         sum = 0
         for i,value in enumerate(tuple1,start=1):
             sum = sum + value
-            lookup[i-1] = sum
+            lookup[i] = sum
             if sum >= target:
                 print(lookup)
                 return i
