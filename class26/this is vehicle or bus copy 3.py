@@ -6,4 +6,4 @@ class bus(vehicle):
     pass
 
 b1 = bus()
-b1.fare(20,678777777777)
+b1.fare(20,6777777777777777)
