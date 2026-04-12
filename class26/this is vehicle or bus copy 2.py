@@ -18,6 +18,7 @@ class penguin(bird):
         print("Running")
 
 p = penguin()
+
 p.who()
 p.what()
 
