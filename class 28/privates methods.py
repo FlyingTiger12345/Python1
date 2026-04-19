@@ -1,11 +1,22 @@
-class MyClass:
-    __number = 27
+class Toyota:
+    def origin(self):
+        print("The country of origin is Japan")
+    def bestcar(self):
+        print("The best car is the Hiace")
+    def continent(self):
+        print("The continent is on asia")
 
-    def __privMethods(self):
-        print("ok")
+class BYD:
+    def origin(self):
+        print("The country of origin is china")
+    def bestcar(self):
+        print("The best car is the Seal")
+    def continent(self):
+        print("The continent is on asia")
+byd = Toyota()
+toyota = BYD()
 
-    def yes(self):
-        print("hello",MyClass.__number)
-among = MyClass()
-among.yes()
-among.__privMethods()
+for carsinnnfop in (toyota,byd):
+    carsinnnfop.origin()
+    carsinnnfop.bestcar()
+    carsinnnfop.continent()
