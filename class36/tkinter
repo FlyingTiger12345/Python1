@@ -1,0 +1,12 @@
+from tkinter import*
+win = Tk()
+win.title("number pad")
+win.geometry("300x300")
+t = [[7,8,9,] , [4,5,6] ,[1,2,3],['0','#','*']]
+for i in range(4):
+    win.rowconfigure(index = i,weight = 0,minsize = 70)
+    for j in range(3):
+        win.columnconfigure(index = j,weight = 2,minsize = 70)
+        label1 = Label(win,text = t[i][j], bg = 'red',bd = 3,fg = 'black',relief = 'ridge')
+        label1.grid(row = i,column = j)
+win.mainloop()
