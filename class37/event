@@ -1,0 +1,20 @@
+# EVENT HANDLING
+import tkinter
+from tkinter import *
+window = Tk()
+window.configure(bg = 'orange')
+window.title("Event Handling")
+window.geometry('300x300')
+
+def handle_keypress(events):
+    print(events.char)
+def handle_mouse(events):
+    print("mouse clicked")
+
+window.bind("<Key>",handle_keypress)
+button1 = Button(window,text = 'click me', bg='navy',fg= 'white',bd = 3,relief="raised", width= 20)
+button1.pack(pady= 100)
+button1.bind("<Button-1>",handle_mouse)
+
+
+window.mainloop()
