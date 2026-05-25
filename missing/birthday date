@@ -1,0 +1,12 @@
+
+birthday1 = "05/14/08"
+birthday2 = "11/22/10"
+birthday3 = "01/05/12"
+birthday4 = "08/19/09"
+birthday5 = "12/31/11" 
+
+print("Birthday 1:", birthday1)
+print("Birthday 2:", birthday2)
+print("Birthday 3:", birthday3)
+print("Birthday 4:", birthday4)
+print("Birthday 5:", birthday5)
