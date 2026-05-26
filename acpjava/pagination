@@ -11,7 +11,7 @@
 <body>
 <div class="container">
   <h2>Pagination </h2>
-  <p> Fall in love with coding</p>
+  <p>Assignment</p>
   <!-- Declare the pagination class -->
         <ul class="pagination">
   
