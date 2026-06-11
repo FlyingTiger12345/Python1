@@ -1,0 +1,35 @@
+from tkinter import *
+from tkinter.filedialog import askopenfile, asksaveasfile
+
+def open_file():
+    file = askopenfile(mode='r', filetypes=[('all files', '*.*')])
+    if file is not None:
+        content = file.read()
+        text1.delete("1.0", "end")
+        text1.insert(END, content)
+        file.close()
+
+def save_file():
+    file = asksaveasfile(mode="w", filetypes=[('text files', '*.txt')])
+    if file is not None:
+        mytext = text1.get("1.0", END)
+        file.write(mytext)
+        file.close()
+
+window = Tk()
+window.title("Text Editor")
+window.geometry("600x500")
+
+window = Tk()
+window.title("Text Editor")
+window.geometry("600x500")
+
+text1 = Text(window, width=50, height=20, relief='sunken', bd=3)
+button1 = Button(window, width=10, text="open", command=open_file)
+button2 = Button(window, width=10, text="save", command=save_file)
+
+button1.grid(row=1, column=1)
+button2.grid(row=2, column=1)
+text1.grid(row=1, column=2, pady=20, rowspan=2, padx=20)
+
+window.mainloop()
