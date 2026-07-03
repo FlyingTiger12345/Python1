@@ -1,9 +1,0 @@
-num = int(input("i will guess the digits"))
-count = 0
-temp = num
-while temp > 0:
-    count+=1
-    temp = temp //10
-
-print(count)
-
