@@ -1,0 +1,14 @@
+
+tree1 = 98
+tree2 = 94
+tree3 = 41
+tree4 = 95
+tree5 = 11
+
+
+sum = tree1+tree2+tree3+tree4+tree5
+print("the sum of all the 5 trees is: ", sum)
+
+
+square_root = sum ** 0.5
+print("the square root of the total is :", square_root)

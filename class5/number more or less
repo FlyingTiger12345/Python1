@@ -1,0 +1,8 @@
+n = int(input("enter number"))
+if n > 0:
+    print(n,"is greater than 0")
+    print("i am in if block")
+else:
+     print(n,"is less than 0")
+     print("i am in else block")
+print("i am not in neither if else blocks")

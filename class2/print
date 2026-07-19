@@ -1,0 +1,6 @@
+print("Hello World")
+print(24)
+print("a = 24")
+print("name\tage\tnumbet\nJack\t16\t67676767\nJohn\t71\t694124\nRon\t41\t41678910")
+print("profile of people",end=".")
+print("six seven")

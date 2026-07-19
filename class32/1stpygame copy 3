@@ -1,0 +1,36 @@
+import pygame
+
+pygame.init()
+
+screen = pygame.display.set_mode((500,400))
+x = 100
+y = 160
+
+x1 = 200
+y1 = 260
+
+pygame.display.set_caption("my pygame window")
+
+
+done = False
+
+while not done:
+    screen.fill((255,127,127))
+
+    for event in pygame.event.get():
+
+        if event.type == pygame.QUIT:
+
+            quit()
+        pressedd = pygame.key.get_pressed()
+        if pressedd[pygame.K_UP]:
+            y = y - 5
+        if pressedd[pygame.K_DOWN]:
+            y = y + 5
+        if pressedd[pygame.K_LEFT]:
+            x = x - 5
+        if pressedd[pygame.K_RIGHT]:
+            x = x + 5
+    pygame.draw.rect(screen,"blue",pygame.Rect((x,y), (50,70)))
+    pygame.draw.rect(screen,"green",pygame.Rect((x1,y1), (50,70)))
+    pygame.display.update()

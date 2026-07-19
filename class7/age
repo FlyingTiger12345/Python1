@@ -1,0 +1,10 @@
+age = int(input("input ur age"))
+if age >=10:
+    if age <=20:
+        print("your age 10-20")
+    else:
+        print("your age 20 or more than")
+else:
+    print("your less than age 10")
+
+

@@ -1,0 +1,8 @@
+a = 67
+print("the type of a is",type(a))
+b = 67.67
+print("the type of b is",type(b))
+c = "67"
+print("the type of c is",type(c))
+d = True
+print("the type of a is",type(d))

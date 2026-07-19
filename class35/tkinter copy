@@ -1,0 +1,39 @@
+from tkinter import *
+
+win = Tk()
+win.title("Welcome")
+win.geometry("500x500")
+win.configure(bg='teal')
+
+def mul():
+   
+    n1 = int(entry1.get())
+    n2 = int(entry2.get())
+    
+  
+    product = n1 * n2
+    
+    
+    result = "the product is " + str(product)
+    
+   
+    text1.delete("1.0", "end")
+    text1.insert("1.0", result)
+
+# UI Elements
+label1 = Label(win, bg='teal', fg='white', text="enter two numbers")
+label1.pack(pady=10)
+
+entry1 = Entry()
+entry1.pack(pady=10)
+
+entry2 = Entry()
+entry2.pack(pady=10)
+
+button1 = Button(win, bg='white', fg='teal', text="Multiply", command=mul)
+button1.pack(pady=10)
+
+text1 = Text(win, bg='darkgrey', fg='teal', width=200, height=5)
+text1.pack()
+
+win.mainloop()

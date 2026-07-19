@@ -1,0 +1,24 @@
+
+numbers = [12, 45, 46, 78, 56]
+
+
+squares = []
+even = []
+odd = []
+
+
+for amongus in numbers:
+   
+    sq = amongus * amongus
+    squares.append(sq)
+    
+    
+    if amongus % 2 == 0:
+        even.append(amongus)
+    else:
+        odd.append(amongus)
+
+
+print("Squares:", squares)
+print("Even numbers:", even)
+print("Odd numbers:", odd)

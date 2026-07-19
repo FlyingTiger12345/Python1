@@ -1,0 +1,4 @@
+n = int(input("enter the number u wants of the reverse"))
+for i in range(n,0,-1):
+    print(i)
+

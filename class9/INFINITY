@@ -1,0 +1,3 @@
+i = 67
+while i >= 67:
+    print("sixsevens")

@@ -1,0 +1,10 @@
+a = 67
+b = 68
+c = 69
+d = 70
+e = 71
+
+sum = a+b+c+d+e
+total = sum/5
+print("the sum is",sum)
+print("the total is",total)

@@ -1,0 +1,8 @@
+dict1 = {"man":2,"woman":3,"among":4,"us":5,"bus":6,"asbus":7,"trbus":8,"leebus":9,"amonusfunnymemsusus":10}
+c = 0
+
+for i in dict1:
+    if dict1[i]%2 == 0:
+        c += 1
+print("the  advanced frequency is",c)
+

@@ -1,0 +1,8 @@
+print("Hello World")
+print(24)
+x=100
+y="name"
+print(x)
+print(y)
+logo = input("Whats ur name")
+print("GoodMorning",logo,"to Python")

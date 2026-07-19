@@ -1,0 +1,6 @@
+n = int(input("enter the number u wants of the sum"))
+sum = 0
+for i in range(0,n+1):
+    sum = sum+i
+
+print(f"the number is {n} the sum is {sum}")

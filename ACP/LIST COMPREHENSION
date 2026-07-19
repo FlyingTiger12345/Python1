@@ -1,0 +1,17 @@
+food1 = {2, 3, 1}
+food2 = {'burger', 'pizza', 'fries'}
+food3 = list(zip(food1, food2))
+print(food3,"\n")
+
+food_prices = [10, 20, 30, 40]
+food_calories = [100, 200, 300, 400]
+
+for x, y in zip(food_prices, food_calories[::-1]):
+    print(x, y)
+
+foods = ['burger', 'pizza', 'fries']
+ratings = [5, 4, 3]
+
+food_dict = {foods: ratings for foods,
+			ratings in zip(foods, ratings)}
+print('\n{}'.format(food_dict))

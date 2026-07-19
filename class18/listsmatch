@@ -1,0 +1,11 @@
+def word_matching(lists):
+    count = 0
+    new_list = []
+    for word in lists:
+        if len(word) > 2 and word[0] == word[-1]:
+            count += 1
+            new_list.append(word)
+    print(new_list)
+    print("The count of words where first and last character match are", count)
+lists = ['bob', 'accasia', 'box', 'madam', 'racecar', 'lily', 'data']
+word_matching(lists)
