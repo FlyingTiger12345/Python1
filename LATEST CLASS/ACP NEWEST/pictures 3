@@ -1,0 +1,30 @@
+import cv2
+
+
+image1 = cv2.imread('example1.jpg')
+image2 = cv2.imread('example2.jpg')
+image3 = cv2.imread('example3.jpg')
+
+
+cv2.namedWindow('Loaded Image 1', cv2.WINDOW_NORMAL)
+cv2.resizeWindow('Loaded Image 1', 800, 500)
+cv2.imshow('Loaded Image 1', image1)
+
+
+cv2.namedWindow('Loaded Image 2', cv2.WINDOW_NORMAL)
+cv2.resizeWindow('Loaded Image 2', 800, 500)
+cv2.imshow('Loaded Image 2', image2)
+
+
+cv2.namedWindow('Loaded Image 3', cv2.WINDOW_NORMAL)
+cv2.resizeWindow('Loaded Image 3', 800, 500)
+cv2.imshow('Loaded Image 3', image3)
+
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
+print(f"Image 1 Dimensions: {image1.shape}")
+print(f"Image 2 Dimensions: {image2.shape}")
+print(f"Image 3 Dimensions: {image3.shape}")
