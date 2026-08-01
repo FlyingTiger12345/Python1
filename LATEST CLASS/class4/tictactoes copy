@@ -1,0 +1,59 @@
+import random
+from colorama import init, Fore, Style
+
+init(autoreset=True)
+
+
+def player_choice():
+    symbol = ""
+    while symbol not in ["X", "O"]:
+        symbol = input(
+            Fore.GREEN + "Do you want to be X or O? " + Style.RESET_ALL
+        ).upper()
+    if symbol == "X":
+        return ("X", "O")
+
+
+def tic_tac_toe():
+    print("Welcome to Tic-Tac-Toe!")
+    player_name = input(Fore.GREEN + "Enter your name: " + Style.RESET_ALL)
+    while True:
+        board = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+        player_symbol, ai_symbol = player_choice()
+        print(player_symbol)
+        print(ai_symbol)
+        turn = "Player"
+        game_on = True
+
+        while game_on:
+            if turn == "Player":
+                if check_win(board, player_symbol):
+                    print(
+                        "Congratulations! "
+                        + player_name
+                        + ", you have won the game!"
+                    )
+                    game_on = False
+                else:
+                    if check_full(board):
+                        print("It's a tie!")
+                        break
+                    else:
+                        turn = "AI"
+            else:
+                if check_win(board, ai_symbol):
+                    print("AI HAS WON THE GAME")
+                else:
+                    if check_full(board):
+                        print("its a tie")
+                        break
+                    else:
+                        turn = "player"
+        play_again = input("do u want to play again (y/n?)").lower()
+        if play_again != "yes":
+            print("Thank you for playing")
+            break
+
+
+if __name__ == "__main__":
+    tic_tac_toe()

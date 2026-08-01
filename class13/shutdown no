@@ -1,6 +1,0 @@
-
-s = input("do you want to shutdown")
-if s == "no":
-    exit()
-else:
-    os.system("shutdown")

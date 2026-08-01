@@ -1,4 +1,0 @@
-a = input("phrase here")
-print("your phrase", a)
-print("reversed phrase is")
-print(a[::-1])

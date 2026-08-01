@@ -1,7 +1,0 @@
-sixseven = int(input("enter the correct number "))
-if  sixseven  == 67:
-    print ("correcet good job")
-    
-else:
-    print ("not what im looking for")
-    
