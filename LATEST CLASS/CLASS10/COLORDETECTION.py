@@ -51,32 +51,32 @@ def main():
             if not ret:
                 print("cant receive frame")
                 break
-            out = apply_filter(frame,ftype)
-            cv2.imshow("filter",out)
-            key=cv2.waitKey(1) & 0xFF
-            if key == ord("r"):
+        out = apply_filter(frame,ftype)
+        cv2.imshow("filter",out)
+        key=cv2.waitKey(1) & 0xFF
+        if key == ord("r"):
                 ftype = "red_tint"
-            elif key == ord('g'):
+        elif key == ord('g'):
 
                 ftype = "green_tint"
 
-            elif key == ord('b'):
+        elif key == ord('b'):
 
                 ftype = "blue_tint"
 
-            elif key == ord('s'):
+        elif key == ord('s'):
 
                 ftype = "sobel"
 
-            elif key == ord('c'):
+        elif key == ord('c'):
 
                 ftype = "canny"
 
-            elif key == ord('t'):
+        elif key == ord('t'):
 
                 ftype = "cartoon"
 
-            elif key == ord('q'):
+        elif key == ord('q'):
 
              break
 
