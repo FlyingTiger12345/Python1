@@ -3,7 +3,7 @@ import mediapipe as mp
 
 
 
-mp_hands = mp.solutions.habds
+mp_hands = mp.solutions.hands
 mp_drawing = mp.solutions.drawing_utils
 
 
@@ -19,14 +19,14 @@ with mp_hands.Hands() as hands:
             break
 
 
-        rg = cv2.cvtColor(frame.cv2.COLOR_BGR2RGB)
+        rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         results = hands.process(rgb)
 
 
         total_finger=0
 
 
-        if results.multi_hands_landmarks:
+        if results.multi_hand_landmarks:
             for hand_landmarks in results.multi_hand_landmarks:
                 mp_drawing.draw_landmarks(
                     frame,hand_landmarks,mp_hands.HAND_CONNECTIONS)
@@ -37,12 +37,12 @@ with mp_hands.Hands() as hands:
 
                 for tip in tips:
                     if landmarks[tip].y < landmarks[tip -2 ].y:
-                        total_fingers+=1
+                        total_finger+=1
 
 
 
                 if landmarks[4].x < landmarks[3].x:
-                    total_fingers+=1
+                    total_finger+=1
 
         cv2.putText(frame,f'Finger:{total_finger}', (10,50),
                     cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),2)
