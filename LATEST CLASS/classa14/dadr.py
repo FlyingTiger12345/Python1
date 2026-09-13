@@ -129,7 +129,7 @@ while True:
 
     if capture:
         name = f"picture_{int(now)}.jpg"; cv2.imwrite(name,out); print("saved:",name)
-        pausedd,freze = True,out.copy(); cv2.imshow(POP,freeze)
+        paused,freeze = True,out.copy(); cv2.imshow(POP,freeze)
 
 
     cv2.imshow(MAIN,out)
